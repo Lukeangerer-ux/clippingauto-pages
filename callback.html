@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Login abgeschlossen</title></head>
+<body style="font-family: sans-serif; max-width: 600px; margin: 40px auto;">
+<h1>Login abgeschlossen</h1>
+<p>Kopiere die komplette Adresse aus der Adressleiste deines Browsers zurück ins Terminal. Oder nur den Code:</p>
+<pre id="code" style="background:#eee; padding:10px; word-break:break-all;"></pre>
+<script>
+var params = new URLSearchParams(window.location.search);
+document.getElementById('code').textContent = params.get('code') || '(kein code-Parameter gefunden)';
+</script>
+</body>
+</html>
